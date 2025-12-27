@@ -16,11 +16,11 @@
 /* Itt tudod beállítani a program nyelvét 
    You can set the program language here. 
    Supported languages: HU NL PL RU EN GR SK DE. */
-#define L10N_LANGUAGE HU
+#define L10N_LANGUAGE PL
 
 /* -- Névnapok megjelenítése -- Display name days -- 
 Supported languages: HU, PL, NL, GR, DE (UA Local/namedays/namedays_UA.h is not filled in.) */
-#define NAMEDAYS_FILE HU
+#define NAMEDAYS_FILE PL
 
 #define USE_BUILTIN_LED false /* The RGB LED does not turn on.. */
 
@@ -99,7 +99,7 @@ Supported languages: HU, PL, NL, GR, DE (UA Local/namedays/namedays_UA.h is not 
 /* Google TTS hanggal mondja be az ídőt megadott nyelven és megadott percenként.
    Speaks the time using Google TTS voice in the specified language and every specified minute.
 */
-#define CLOCK_TTS_ENABLED          true  // Enabled (true) or disabled (false)
+#define CLOCK_TTS_ENABLED          false  // Enabled (true) or disabled (false)
 #define CLOCK_TTS_LANGUAGE         "HU"  // Language ( EN, HU, PL, NL, DE, RU, RO ,FR, GR)
 #define CLOCK_TTS_INTERVAL_MINUTES 30    // Hány percenként mondja be. - How many times a minute does it say.
 
@@ -111,13 +111,13 @@ Supported languages: HU, PL, NL, GR, DE (UA Local/namedays/namedays_UA.h is not 
 /* Ezzel a beállítással a teljes időjárás jelentés megjelenik.
    With this setting, the full weather report is displayed.
 */
-//#define EXT_WEATHER  true
+#define EXT_WEATHER  true
 
 
 /* Ezzel a beállítással a szél sebessége km/h lesz.
    With this setting, the wind speed will be km/h.
 */
-//#define WIND_SPEED_IN_KMH
+#define WIND_SPEED_IN_KMH
 
 
 /* A VU méter két fajta kijelzési módot támogat.
@@ -127,7 +127,7 @@ Ha a sor elején ott van // jel akkor az alap VU méter működik ami balról jo
 BOOMBOX_STYLE is the style when the display swings out from the center to two sides. You can set it here.
 If there is a // sign at the beginning of the line, the basic VU meter is working, swinging out from left to right. 
 */
-//#define BOOMBOX_STYLE
+#define BOOMBOX_STYLE
 
 /* A VU méter végén megjelenik egy fehér csík a csúcsértékeknél, ha ezt bekapcsolod. A sor elején a // jel letíltja.
  A white bar will appear at the end of the VU meter at the peak values ​​if you enable this. The // at the beginning of the line will disable it.
